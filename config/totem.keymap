@@ -100,7 +100,7 @@
                 &kp L         
                 &kp SEMICOLON  
         
-                &trans  
+                &none  
                 &hm LSHIFT Z  
                 &hm LCTRL X  
                 &hm LGUI C   
@@ -111,7 +111,7 @@
                 &hm RGUI COMMA  
                 &hm RCTRL DOT  
                 &hm RSHIFT SLASH 
-                &trans
+                &none
 
                 &lt 0 ESCAPE  
                 &kp TAB     
@@ -125,40 +125,40 @@
     Num {
         label = "Num";
         bindings = <
-                &trans      
-                &trans     
-                &trans    
-                &trans    
-                &trans
+                &to Base      
+                &none     
+                &none    
+                &none    
+                &none
                 &kp SLASH  
                 &kp NUMBER_7  
                 &kp NUMBER_8  
                 &kp NUMBER_9  
                 &kp ASTERISK       
 
-                &trans     
-                &trans    
-                &trans     
-                &trans    
-                &trans
+                &none     
+                &none    
+                &none     
+                &none    
+                &none
                 &kp MINUS     
                 &kp NUMBER_4  
                 &kp NUMBER_5  
                 &kp NUMBER_6  
                 &kp PLUS               
 
-                &trans  
-                &trans     
-                &trans    
-                &trans    
-                &trans
-                &trans
+                &none  
+                &none     
+                &none    
+                &none    
+                &none
+                &none
                 &kp NUMBER_0         
                 &kp NUMBER_1  
                 &kp NUMBER_2  
                 &kp NUMBER_3  
                 &kp DOT           
-                &trans
+                &none
 
                 &trans       
                 &trans  
@@ -172,40 +172,40 @@
     Sym {
         label = "Sym";
         bindings = <
-                &trans      
-                &trans     
-                &trans    
-                &trans    
-                &trans
+                &to Base      
+                &none     
+                &none    
+                &none    
+                &none
                 &kp LEFT_BRACE  
                 &kp LEFT_PARENTHESIS
                 &kp AMPERSAND         
                 &kp RIGHT_PARENTHESIS   
                 &kp RIGHT_BRACE       
 
-                &trans      
-                &trans     
-                &trans    
-                &trans    
-                &trans
+                &none      
+                &none     
+                &none    
+                &none    
+                &none
                 &kp COLON       
                 &kp DOLLAR     
                 &kp PERCENT          
                 &kp CARET              
                 &kp PLUS              
 
-                &trans  
-                &trans      
-                &trans     
-                &trans    
-                &trans    
-                &trans  
+                &none  
+                &none      
+                &none     
+                &none    
+                &none    
+                &none  
                 &kp TILDE       
                 &kp EXCL       
                 &kp AT               
                 &kp HASH               
                 &kp PIPE              
-                &trans
+                &none
 
                 &trans      
                 &trans     
@@ -219,16 +219,16 @@
     Nav {
         label = "Nav";
         bindings = <
-                &kp DELETE    
-                &trans    
-                &trans     
-                &trans      
-                &trans                       
-                &trans     
-                &trans         
-                &trans       
-                &trans       
-                &trans  
+                &to Base    
+                &none    
+                &none     
+                &none      
+                &none                       
+                &none     
+                &none         
+                &none       
+                &none       
+                &none  
                 
                 &kp LEFT_GUI  
                 &kp LALT  
@@ -241,7 +241,7 @@
                 &kp UP    
                 &kp RIGHT
 
-                &trans  
+                &none  
                 &kp LEFT      
                 &kp DOWN  
                 &kp UP     
@@ -252,7 +252,7 @@
                 &kp PAGE_DOWN  
                 &kp PAGE_UP      
                 &kp END  
-                &trans
+                &none
 
                 &trans     
                 &trans      
@@ -267,11 +267,11 @@
         label = "Mouse";
         bindings = <
         // Top Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans          
+                &to Base  
+                &none  
+                &none  
+                &none  
+                &none          
         // Top Row Right Side
                 &mkp MB4
                 &mkp MB2
@@ -279,31 +279,31 @@
                 &mkp MB1
                 &mkp MB5
         // Mid Row Left Side
-                &trans  
-                &trans   
-                &trans   
-                &trans   
-                &trans 
+                &none  
+                &none   
+                &none   
+                &none   
+                &none 
         // Mid Row Right Side
-                &trans  
+                &none  
                 &mmv MOVE_LEFT 
                 &mmv MOVE_DOWN 
                 &mmv MOVE_UP
                 &mmv MOVE_RIGHT
         // Bottom Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans         
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none         
         // Bottom Row Right Side 
-                &trans  
+                &none  
                 &msc SCRL_LEFT
                 &msc SCRL_DOWN
                 &msc SCRL_UP
                 &msc SCRL_RIGHT
-                &trans
+                &none
         // Thumb Cluster Left
                 &trans  
                 &trans  
@@ -318,47 +318,47 @@
     Media {
         label = "Media";
         bindings = <
-                &trans    
-                &trans    
-                &trans     
-                &trans      
-                &trans               
-                &trans            
-                &trans             
-                &trans           
-                &trans      
-                &trans  
+                &none    
+                &none    
+                &none     
+                &none      
+                &none               
+                &none            
+                &none             
+                &none           
+                &none      
+                &none  
 
                 &kp LGUI  
                 &kp LALT  
                 &kp LCTRL  
                 &kp LSHIFT  
-                &trans               
-                &trans    
+                &none               
+                &none    
                 &kp C_PREVIOUS  
                 &kp C_VOLUME_DOWN  
                 &kp C_VOLUME_UP  
                 &kp C_NEXT  
 
-                &trans  
-                &trans    
-                &trans    
-                &trans     
-                &trans      
-                &trans               
-                &trans            
-                &trans             
-                &trans           
-                &trans      
-                &trans  
-                &trans
+                &none  
+                &none    
+                &none    
+                &none     
+                &none      
+                &none               
+                &none            
+                &none             
+                &none           
+                &none      
+                &none  
+                &none
                 
-                &trans     
-                &trans      
+                &none     
+                &none      
                 &tog 8           
                 &kp C_STOP  
                 &kp C_PLAY_PAUSE             
-                &trans  
+                &none  
         >;
     };
 
@@ -366,51 +366,51 @@
         label = "Fun";
         bindings = <
         // Top Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans          
+                &to Base  
+                &none  
+                &none  
+                &none  
+                &none          
         // Top Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Bottom Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans         
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none         
         // Bottom Row Right Side 
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Thumb Cluster Left
-                &trans  
-                &trans  
-                &trans       
+                &none  
+                &none  
+                &none       
         //  Thumb Cluster Right   
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none
         >;
     };
 
@@ -418,51 +418,51 @@
         label = "Button";
         bindings = <
         // Top Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans          
+                &to Base  
+                &none  
+                &none  
+                &none  
+                &none          
         // Top Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Bottom Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans         
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none         
         // Bottom Row Right Side 
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Thumb Cluster Left
-                &trans  
-                &trans  
-                &trans       
+                &none  
+                &none  
+                &none       
         //  Thumb Cluster Right   
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none
         >;
     };
 
@@ -470,51 +470,51 @@
         label = "Game";
         bindings = <
         // Top Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans          
+                &to Base  
+                &none  
+                &none  
+                &none  
+                &none          
         // Top Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Bottom Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans         
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none         
         // Bottom Row Right Side 
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Thumb Cluster Left
-                &trans  
-                &trans  
-                &trans       
+                &none  
+                &none  
+                &none       
         //  Thumb Cluster Right   
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none
         >;
     };
 
@@ -522,51 +522,51 @@
         label = "Gameplus";
         bindings = <
         // Top Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans          
+                &to Base  
+                &none  
+                &none  
+                &none  
+                &none          
         // Top Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Mid Row Right Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Bottom Row Left Side
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans         
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none         
         // Bottom Row Right Side 
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none  
+                &none  
+                &none  
+                &none
         // Thumb Cluster Left
-                &trans  
-                &trans  
-                &trans       
+                &none  
+                &none  
+                &none       
         //  Thumb Cluster Right   
-                &trans  
-                &trans  
-                &trans
+                &none  
+                &none  
+                &none
         >;
     };
   };
