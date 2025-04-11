@@ -494,7 +494,7 @@
                 &none
                 &none 
         // Bottom Row Left Side
-                &kp  
+                &none
                 &kp NUMBER_1
                 &kp NUMBER_0
                 &kp S
@@ -506,6 +506,7 @@
                 &none
                 &none
                 &none 
+                &none
         // Thumb Cluster Left
                 &trans
                 &trans
