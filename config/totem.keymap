@@ -17,11 +17,11 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define Base        0
-#define Media       1
-#define Nav         2
+#define Num         1
+#define Sym         2
 #define Mouse       3
-#define Sym         4
-#define Num         5
+#define Nav         4
+#define Media       5
 #define Fun         6
 #define Button      7
 #define Game        8
@@ -57,100 +57,156 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_studio_unlock {
+            timeout-ms = <50>;
+            key-positions = <32 37>;
+            bindings = <&studio_unlock>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
     Base {
         label = "Base";
         bindings = <
-                &kp Q       
-                &kp W       
-                &kp E         
-                &kp R         
-                &kp T                         
+                &lt 1 Q       
+                &lt 2 W       
+                &lt 3 E         
+                &lt 4 R         
+                &lt 5 T                         
                 &kp Y        
                 &kp U         
                 &kp I       
                 &kp O               
                 &kp P
 
-                &hm LGUI A  
-                &hm LALT S  
-                &hm LCTRL D   
-                &hm LSHIFT F  
+                &lt 6 A       
+                &lt 7 S       
+                &lt 8 D         
+                &lt 9 F         
                 &kp G                         
-                &kp H  
-                &hm RSHFT J   
-                &hm RCTRL K  
-                &hm RALT L  
-                &hm RGUI SEMICOLON  
+                &kp H        
+                &kp J     
+                &kp K     
+                &kp L         
+                &kp SEMICOLON  
         
                 &trans  
-                &kp Z       
-                &kp X       
-                &kp C         
-                &kp V         
+                &hm LSHIFT Z  
+                &hm LCTRL X  
+                &hm LGUI C   
+                &hm LALT V  
                 &kp B                         
-                &kp N        
-                &kp M     
-                &kp COMMA     
-                &kp DOT         
-                &lt 7 SLASH  
+                &kp N  
+                &hm RALT M   
+                &hm RGUI COMMA  
+                &hm RCTRL DOT  
+                &hm RSHIFT SLASH 
                 &trans
 
-                &lt 1 ESCAPE  
-                &lt 2 TAB     
-                &lt 3 SPACE         
-                &lt 4 BACKSPACE  
-                &lt 5 ENTER  
-                &lt 6 DELETE
+                &lt 0 ESCAPE  
+                &kp TAB     
+                &kp SPACE         
+                &kp ENTER  
+                &kp DELETE
+                &kp BACKSPACE  
         >;
     };
 
-    Media {
-        label = "Media";
+    Num {
+        label = "Num";
         bindings = <
+                &trans      
+                &trans     
                 &trans    
+                &trans    
+                &trans
+                &kp SLASH  
+                &kp NUMBER_7  
+                &kp NUMBER_8  
+                &kp NUMBER_9  
+                &kp ASTERISK       
+
+                &trans     
                 &trans    
                 &trans     
-                &trans      
-                &trans               
-                &trans            
-                &trans             
-                &trans           
-                &trans      
-                &trans  
-
-                &kp LGUI  
-                &kp LALT  
-                &kp LCTRL  
-                &kp LSHIFT  
-                &trans               
                 &trans    
-                &kp C_PREVIOUS  
-                &kp C_VOLUME_DOWN  
-                &kp C_VOLUME_UP  
-                &kp C_NEXT  
+                &trans
+                &kp MINUS     
+                &kp NUMBER_4  
+                &kp NUMBER_5  
+                &kp NUMBER_6  
+                &kp PLUS               
 
                 &trans  
-                &trans    
-                &trans    
                 &trans     
-                &trans      
+                &trans    
+                &trans    
+                &trans
+                &trans
+                &kp NUMBER_0         
+                &kp NUMBER_1  
+                &kp NUMBER_2  
+                &kp NUMBER_3  
+                &kp DOT           
+                &trans
+
+                &trans       
+                &trans  
                 &trans               
-                &trans            
-                &trans             
-                &trans           
                 &trans      
+                &trans     
+                &trans
+        >;
+    };
+
+    Sym {
+        label = "Sym";
+        bindings = <
+                &kp LEFT_BRACE  
+                &kp AMPERSAND  
+                &kp ASTERISK         
+                &kp LEFT_PARENTHESIS   
+                &kp RIGHT_BRACE       
+                &trans      
+                &trans     
+                &trans    
+                &trans    
+                &trans
+
+                &kp COLON       
+                &kp DOLLAR     
+                &kp PERCENT          
+                &kp CARET              
+                &kp PLUS              
+                &trans  
+                &kp RSHIFT  
+                &kp RCTRL  
+                &kp RALT  
+                &kp RGUI
+
+                &trans  
+                &kp TILDE       
+                &kp EXCL       
+                &kp AT               
+                &kp HASH               
+                &kp PIPE              
+                &trans      
+                &trans     
+                &trans    
+                &trans    
                 &trans  
                 &trans
-                
-                &trans     
+
+                &kp LEFT_PARENTHESIS  
+                &kp RIGHT_PARENTHESIS  
+                &kp UNDERSCORE        
                 &trans      
-                &tog 8           
-                &kp C_STOP  
-                &kp C_PLAY_PAUSE             
-                &trans  
+                &trans     
+                &trans   
         >;
     };
 
@@ -253,97 +309,50 @@
         >;
     };
 
-    Sym {
-        label = "Sym";
+    Media {
+        label = "Media";
         bindings = <
-                &kp LEFT_BRACE  
-                &kp AMPERSAND  
-                &kp ASTERISK         
-                &kp LEFT_PARENTHESIS   
-                &kp RIGHT_BRACE       
-                &trans      
+                &trans    
+                &trans    
                 &trans     
-                &trans    
-                &trans    
-                &trans
-
-                &kp COLON       
-                &kp DOLLAR     
-                &kp PERCENT          
-                &kp CARET              
-                &kp PLUS              
-                &trans  
-                &kp RSHIFT  
-                &kp RCTRL  
-                &kp RALT  
-                &kp RGUI
-
-                &trans  
-                &kp TILDE       
-                &kp EXCL       
-                &kp AT               
-                &kp HASH               
-                &kp PIPE              
                 &trans      
-                &trans     
-                &trans    
-                &trans    
-                &trans  
-                &trans
-
-                &kp LEFT_PARENTHESIS  
-                &kp RIGHT_PARENTHESIS  
-                &kp UNDERSCORE        
+                &trans               
+                &trans            
+                &trans             
+                &trans           
                 &trans      
-                &trans     
-                &trans   
-        >;
-    };
-
-    Num {
-        label = "Num";
-        bindings = <
-                &kp LEFT_BRACKET  
-                &kp NUMBER_7  
-                &kp NUMBER_8  
-                &kp NUMBER_9  
-                &kp RIGHT_BRACKET       
-                &trans      
-                &trans     
-                &trans    
-                &trans    
-                &trans
-
-                &kp SEMICOLON     
-                &kp NUMBER_4  
-                &kp NUMBER_5  
-                &kp NUMBER_6  
-                &kp EQUAL               
                 &trans  
-                &kp RSHIFT  
-                &kp RCTRL  
-                &kp RALT  
-                &kp RGUI
+
+                &kp LGUI  
+                &kp LALT  
+                &kp LCTRL  
+                &kp LSHIFT  
+                &trans               
+                &trans    
+                &kp C_PREVIOUS  
+                &kp C_VOLUME_DOWN  
+                &kp C_VOLUME_UP  
+                &kp C_NEXT  
 
                 &trans  
-                &kp GRAVE         
-                &kp NUMBER_1  
-                &kp NUMBER_2  
-                &kp NUMBER_3  
-                &kp BACKSLASH           
-                &trans      
+                &trans    
+                &trans    
                 &trans     
-                &trans    
-                &trans    
+                &trans      
+                &trans               
+                &trans            
+                &trans             
+                &trans           
+                &trans      
                 &trans  
                 &trans
-
-                &kp SQT       
-                &kp NUMBER_0  
-                &kp MINUS               
-                &trans      
+                
                 &trans     
-                &trans
+                &trans      
+                &tog 8           
+                &kp C_STOP  
+                &kp C_PLAY_PAUSE             
+                &trans  
         >;
     };
 
