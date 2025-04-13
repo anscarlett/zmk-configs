@@ -16,7 +16,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-// defines for pointing layer, must be put BEFOREthe include.
+// defines for pointing layer, must be put BEFORE the include.
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
@@ -31,7 +31,7 @@
 #define Fun         6
 #define Button      7
 #define Game        8
-#define Gameplus    9
+#define GameExt     9
 
 &mt {
     quick-tap-ms = <100>;
@@ -113,7 +113,7 @@
                 &hm RSHIFT SLASH 
                 &none
 
-                &lt 0 ESCAPE  
+                &kp ESCAPE  
                 &kp TAB     
                 &kp SPACE         
                 &kp ENTER  
@@ -518,8 +518,8 @@
         >;
     };
 
-    Gameplus {
-        label = "Gameplus";
+    GameExt {
+        label = "GameExt";
         bindings = <
         // Top Row Left Side
                 &to Base  
