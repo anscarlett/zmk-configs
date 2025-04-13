@@ -3,7 +3,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: anscarlett
-      url-base: https://github.com/carrefinho
+      url-base: https://github.com/anscarlett
   projects:
     - name: zmk
       remote: zmkfirmware
