@@ -183,8 +183,8 @@
                 &kp TAB     
                 &kp SPACE         
                 &kp ENTER  
+                &kp BACKSPACE
                 &kp DELETE
-                &kp BACKSPACE  
         >;
     };
 
@@ -323,8 +323,8 @@
                 &trans     
                 &trans      
                 &trans                   
-                &kp DELETE  
-                &kp ENTER         
+                &trans  
+                &trans         
                 &trans
         >;
     };
@@ -677,8 +677,8 @@
                 &kp TAB     
                 &kp SPACE         
                 &kp ENTER  
+                &kp BACKSPACE
                 &kp DELETE
-                &kp BACKSPACE  
         >;
     };
   };
