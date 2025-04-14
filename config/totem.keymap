@@ -102,37 +102,37 @@
         };
         combo_compound_4 {
             timeout-ms = <50>;
-            key-positions = <1 27>;
+            key-positions = <1 16>;
             bindings = <&kp NUMBER_4>;
             layers = <10>;
         };
         combo_compound_5 {
             timeout-ms = <50>;
-            key-positions = <1 28>;
+            key-positions = <1 17>;
             bindings = <&kp NUMBER_5>;
             layers = <10>;
         };
         combo_compound_6 {
             timeout-ms = <50>;
-            key-positions = <1 29>;
+            key-positions = <1 18>;
             bindings = <&kp NUMBER_6>;
             layers = <10>;
         };
         combo_compound_7 {
             timeout-ms = <50>;
-            key-positions = <1 27>;
+            key-positions = <1 6>;
             bindings = <&kp NUMBER_7>;
             layers = <10>;
         };
         combo_compound_8 {
             timeout-ms = <50>;
-            key-positions = <1 28>;
+            key-positions = <1 7>;
             bindings = <&kp NUMBER_8>;
             layers = <10>;
         };
         combo_compound_9 {
             timeout-ms = <50>;
-            key-positions = <1 29>;
+            key-positions = <1 8>;
             bindings = <&kp NUMBER_9>;
             layers = <10>;
         };
