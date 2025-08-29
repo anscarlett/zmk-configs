@@ -1,14 +1,4 @@
-//
-//                                                        ▀▀▀▀▀     ▀▀▀▀▀          ▀▀█▀▀
-//                                                        ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
-//                                                        █   █  █  █   █  █  █   █  █  █   █
-//                                                         ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
-//                                                               █      ▄▄▄█▄▄▄    █   █  
-//                                                               ▀      █  █  █     █▄█
-//                                                             ▀▀▀▀▀    █  █  █      ▀
-//                                                                      ▀  ▀  ▀
-//
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+// custom keymap for totem
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -25,8 +15,8 @@
 #define Base        0
 #define Num         1
 #define Sym         2
-#define Mouse       3
-#define Nav         4
+#define Sym2        3
+#define Mouse       4
 #define Media       5
 #define Fun         6
 #define Button      7
@@ -155,28 +145,28 @@
                 &kp O               
                 &kp P
 
-                &lt 5 A       
-                &lt 6 S       
-                &lt 7 D         
-                &lt 8 F         
-                &lt 9 G                         
-                &kp H        
-                &kp J     
-                &kp K     
-                &kp L         
-                &kp SEMICOLON  
+                &hm LSHIFT A       
+                &hm LCTRL S       
+                &hm LGUI D         
+                &hm LALT F         
+                &kp G
+                &kp H
+                &mh RALT J        
+                &hm RGUI K     
+                &hm RCTRL L     
+                &hm RSHIFT SEMICOLON  
         
                 &none  
-                &hm LSHIFT Z  
-                &hm LCTRL X  
-                &hm LGUI C   
-                &hm LALT V  
-                &kp B                         
+                &lt 5 Z  
+                &lt 6 X  
+                &lt 7 C   
+                &lt 8 V  
+                &ly 9 B                         
                 &kp N  
-                &hm RALT M   
-                &hm RGUI COMMA  
-                &hm RCTRL DOT  
-                &hm RSHIFT SLASH 
+                &kp M   
+                &kp COMMA  
+                &kp DOT  
+                &kp SLASH 
                 &none
 
                 &kp ESCAPE  
@@ -196,7 +186,7 @@
                 &none    
                 &none    
                 &none
-                &kp SLASH  
+                &kp PLUS  
                 &kp NUMBER_7  
                 &kp NUMBER_8  
                 &kp NUMBER_9  
@@ -211,7 +201,7 @@
                 &kp NUMBER_4  
                 &kp NUMBER_5  
                 &kp NUMBER_6  
-                &kp PLUS               
+                &kp SLASH               
 
                 &none  
                 &none     
@@ -243,35 +233,35 @@
                 &none    
                 &none    
                 &none
-                &kp LEFT_BRACE  
+                &kp CARET
+                &kp DOUBLE_QUOTES
+                &kp LEFT_BRACKET  
+                &kp RIGHT_BRACKET
+                &kp EXCL
+
+                &none      
+                &none     
+                &none    
+                &none    
+                &none
+                &kp EQUALS
+                &kp SINGLE_QUOTE
                 &kp LEFT_PARENTHESIS
-                &kp AMPERSAND         
                 &kp RIGHT_PARENTHESIS   
-                &kp RIGHT_BRACE       
+                &kp AMPERSAND
 
                 &none      
                 &none     
-                &none    
-                &none    
-                &none
-                &kp COLON       
-                &kp DOLLAR     
-                &kp PERCENT          
-                &kp CARET              
-                &kp PLUS              
-
                 &none  
-                &none      
-                &none     
                 &none    
                 &none    
                 &none  
-                &kp TILDE       
-                &kp EXCL       
-                &kp AT               
                 &kp HASH               
+                &kp GRAVE               
+                &kp LEFT_BRACE  
+                &kp RIGHT_BRACE       
                 &kp PIPE              
-                &none
+                &none  
 
                 &trans      
                 &trans     
@@ -282,42 +272,42 @@
         >;
     };
 
-    Nav {
-        label = "Nav";
+    Sym2 {
+        label = "Sym2";
         bindings = <
                 &to Base    
                 &none    
                 &none     
                 &none      
                 &none                       
+                &kp TILDE       
+                &kp HASH       
+                &kp PERCENT          
+                &kp DOLLAR     
+                &kp UNDERSCORE              
+
                 &none     
                 &none         
                 &none       
                 &none       
                 &none  
-                
-                &kp LEFT_GUI  
-                &kp LALT  
-                &kp LCTRL  
-                &kp LSHIFT  
-                &kp SQT                    
-                &kp CAPS   
                 &kp LEFT       
                 &kp DOWN       
                 &kp UP    
                 &kp RIGHT
+                &kp AT               
 
                 &none  
-                &kp LEFT      
-                &kp DOWN  
-                &kp UP     
-                &kp RIGHT   
-                &kp C_PLAY_PAUSE         
-                &kp INSERT   
+                &none     
+                &none         
+                &none       
+                &none       
+                &none  
                 &kp HOME  
                 &kp PAGE_DOWN  
                 &kp PAGE_UP      
                 &kp END  
+                &kp BACKSLASH
                 &none
 
                 &trans     
@@ -340,9 +330,9 @@
                 &none          
         // Top Row Right Side
                 &mkp MB4
-                &mkp MB2
-                &mkp MB3
                 &mkp MB1
+                &mkp MB3
+                &mkp MB2
                 &mkp MB5
         // Mid Row Left Side
                 &none  
