@@ -256,11 +256,11 @@
                 &none    
                 &none    
                 &none  
-                &kp HASH               
+                &kp NON_US_HASH               
                 &kp GRAVE               
                 &kp LEFT_BRACE  
                 &kp RIGHT_BRACE       
-                &kp PIPE              
+                &kp TILDE              
                 &none  
 
                 &trans      
@@ -280,7 +280,7 @@
                 &none     
                 &none      
                 &none                       
-                &kp TILDE       
+                &kp PIPE       
                 &kp HASH       
                 &kp PERCENT          
                 &kp DOLLAR     
